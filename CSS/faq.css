@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Adventure Club — Frequently Asked Questions" />
+  <title>Adventure Club – FAQ</title>
+
+  <style>
+    /* Reset / base */
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: #f8fafc;
+      color: #1f2937;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Layout */
+    .container {
+      width: min(900px, 92%);
+      margin: 0 auto;
+      padding: 4rem 0;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      margin: 0 0 0.5rem 0;
+      font-size: 2.2rem;
+      letter-spacing: -0.01em;
+    }
+
+    p.lead {
+      margin: 0;
+      color: #4b5563;
+      font-size: 0.98rem;
+    }
+
+    /* FAQ list and items */
+    .faq-list {
+      display: grid;
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+
+    .faq-item {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 0.6rem 1rem;
+      transition: box-shadow 160ms ease, transform 160ms ease;
+      overflow: hidden;
+    }
+
+    .faq-item:focus-within {
+      box-shadow: 0 6px 18px rgba(31,41,55,0.06);
+      transform: translateY(-2px);
+    }
+
+    /* Details / summary styling for accessible accordion */
+    details {
+      position: relative;
+    }
+
+    summary {
+      list-style: none;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.6rem 0;
+      outline: none;
+      user-select: none;
+      gap: 0.75rem;
+      font-weight: 600;
+      font-size: 1rem;
+      color: #0f172a;
+    }
+
+    /* Remove default marker in WebKit-based browsers */
+    summary::-webkit-details-marker { display: none; }
+
+    .summary-left {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex: 1;
+    }
+
+    .chev {
+      display: inline-block;
+      transform-origin: center;
+      transition: transform 160ms ease;
+      color: #6b7280;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+    }
+
+    details[open] .chev { transform: rotate(90deg); }
+
+    .faq-answer {
+      padding: 0.5rem 0 0.85rem 0;
+      color: #374151;
+      font-weight: 400;
+      font-size: 0.98rem;
+    }
+
+    /* Subtle separators */
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #eef2f7, transparent);
+      margin: 1rem 0;
+      border-radius: 1px;
+    }
+
+    /* Small responsive tweaks */
+    @media (max-width: 520px) {
+      h1 { font-size: 1.6rem; }
+      .container { padding: 2rem 0; }
+      .faq-item { padding: 0.5rem 0.75rem; }
+      .summary-left { gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+  <main class="container" role="main">
+    <header>
+      <h1>Frequently Asked Questions</h1>
+      <p class="lead">Answers to common questions about Adventure Club. Click a question to reveal the answer.</p>
+    </header>
+
+    <section class="faq-list" aria-label="Frequently asked questions">
+      <details class="faq-item">
+        <summary>
+          <span class="summary-left">How do I join the Adventure Club?</span>
+          <span class="chev" aria-hidden="true">▸</span>
+        </summary>
+        <div class="faq-answer">
+          To join, visit our membership page, choose a plan, and complete the sign-up form. Membership confirmation will be
+          emailed to you. If you need help, contact support at <a href="mailto:support@example.com">support@example.com</a>.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span class="summary-left">What safety measures are in place for events?</span>
+          <span class="chev" aria-hidden="true">▸</span>
+        </summary>
+        <div class="faq-answer">
+          Safety is our priority. Events are led by certified guides, equipment checks are performed, and participants receive
+          pre-event safety briefings. Check the specific event page for additional requirements and recommended gear.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span class="summary-left">Can I cancel or change a booking?</span>
+          <span class="chev" aria-hidden="true">▸</span>
+        </summary>
+        <div class="faq-answer">
+          Yes. Cancellation and change policies vary by event. See the booking page for each event's terms, or contact support
+          for assistance with changes or refunds.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span class="summary-left">Do you provide equipment for beginners?</span>
+          <span class="chev" aria-hidden="true">▸</span>
+        </summary>
+        <div class="faq-answer">
+          Many of our entry-level events include necessary basic equipment. Specific equipment lists and rental options are shown
+          on individual event pages. If you have questions about what to bring, reach out to the event organizer.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span class="summary-left">Who can I contact for more information?</span>
+          <span class="chev" aria-hidden="true">▸</span>
+        </summary>
+        <div class="faq-answer">
+          For general inquiries, email <a href="mailto:hello@adventureclub.example">hello@adventureclub.example</a> or use the contact
+          form on our website. For urgent matters, use the phone number listed on the contact page.
+        </div>
+      </details>
+    </section>
+  </main>
+</body>
+</html>
