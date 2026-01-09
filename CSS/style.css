@@ -3,7 +3,7 @@ html, body { margin: 0; padding: 0; }
 
 body {
   font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
-  color: #1f2937;
+  color: #1f2937; /* Dark Slate Gray */
   background: #ffffff;
   line-height: 1.6;
   transition: background 0.3s, color 0.3s;
@@ -16,12 +16,12 @@ body.dark { background: #0f172a; color: #e5e7eb; }
   margin: auto;
 }
 
-/* HEADER */
+  HEADER 
 .site-header {
   position: sticky;
   top: 0;
   background: #ffffffcc;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
   border-bottom: 1px solid #e5e7eb;
 }
 
