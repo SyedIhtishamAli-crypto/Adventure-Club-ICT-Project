@@ -1,0 +1,28 @@
+/* ===== Contact Page Styles ===== */
+
+.section {
+  padding: 50px 0;
+}
+
+form {
+  max-width: 450px;
+  margin: auto;
+  background: #f8fafc;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+}
+
+form button {
+  width: 100%;
+}
+contact CSS]]]]]]]]
